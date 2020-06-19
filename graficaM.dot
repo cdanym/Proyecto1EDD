@@ -1,0 +1,13 @@
+digraph G {
+node[shape=box]
+root[label = "Root", width = 1.5, style = filled, group = 1];
+guatemala[label= "guatemala", width=1.5, style=filled, group=1];
+root -> guatemala;
+{rank = same; root; guatemala; }
+adidas[label= "adidas", width=1.5, style=filled, group=2];
+root -> adidas;
+guatemalaadidas[label= "daniel", width=1.5];
+adidas -> guatemalaadidas;
+guatemala -> guatemalaadidas;
+{rank = same; adidas; guatemalaadidas; }
+}
